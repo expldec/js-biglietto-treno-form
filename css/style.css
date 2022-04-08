@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#breakdown {
+    text-align: end;
+    font-family: monospace;
+    font-size: 1.5rem;
+}
