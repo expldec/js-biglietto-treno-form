@@ -13,6 +13,32 @@ const noDiscountName = "Biglietto Standard";
 
 
 function clickGenerate() {
+    //usiamo questa funzione per fare controlli sui dati inseriti
+
+    //preleviamo i dati del form
+    const passengerName = document.getElementById("passenger-name").value;
+    const passengerKM = document.getElementById("passenger-km").value;
+    const passengerAgeRange = document.getElementById("passenger-age-range").value;
+
+    if (passengerName === "") {
+        alert("inserire un nome");
+    }
+    else if (passengerKM === "0" || passengerKM === "") {
+        alert("inserire una distanza di almeno 1 km");
+    }
+    else if (passengerKM > 2000) {
+        alert(`${passengerKM} Km? Che c'è, vuoi emigrare? Fa' il bravo, su. Inserisci una distanza inferiore a 2000 Km`);
+    }
+    else if (passengerAgeRange === "") {
+        alert("inserire la fascia d'età del passeggero");
+    }
+    else {
+        generateTicket();
+    }
+
+}
+
+function generateTicket() {
     //preleviamo i dati del form
     const passengerName = document.getElementById("passenger-name").value;
     const passengerKM = document.getElementById("passenger-km").value;
