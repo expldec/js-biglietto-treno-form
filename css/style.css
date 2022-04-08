@@ -1,5 +1,26 @@
-h1 {
+/* COMMON */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b91450;
+    font-family: sans-serif;
+}
+
+h1, h2 {
     text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    text-transform: uppercase;
 }
 
 .centered {
@@ -10,8 +31,82 @@ h1 {
     height: 100vh;
 }
 
+.input, .ticket-list {
+    background-color: white;
+    width: 70%;
+    max-width: 60rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* BUTTONS */
+.btn {
+    margin: 0 0.5rem;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    background-color: lightgray;
+    border: 1px solid grey;
+    color: #b91450;
+    font-weight: bold;
+}
+
+
+/* TOP - Form */
+.input {
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.input-row, .input-btns {
+    display: flex;
+    justify-content: center;
+}
+
+.input-row {
+    margin-bottom: 3rem;
+}
+
+.form-item {
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.form-item label {
+    display: block;
+    font-weight: bold;
+    color: #b91450;
+    margin-bottom: 1rem;
+}
+
+input, select {
+    border: 2px solid #b91450;
+    border-radius: 0.2rem;
+}
+
+
+/* BOTTOM - Ticket details */
+.ticket-list h3 {
+    margin-bottom: 1rem;
+}
+
+.ticket {
+    display: flex;
+    border: 1px solid grey;
+}
+
+.ticket-passenger {
+    background-color: grey;
+    border: 1px solid grey;
+
+}
+
+.ticket div {
+    padding: 1rem;
+}
+
+/* 
 #breakdown {
     text-align: end;
     font-family: monospace;
     font-size: 1.5rem;
-}
+} */

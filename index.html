@@ -8,10 +8,62 @@
     <title>Trenitalia</title>
 </head>
 <body>
-    <div class="centered">
-        <h1 id="message"></h1>
-        <p id="breakdown"></p>
-    </div>
-    <script src="js/script.js"></script>
+    <main>
+        <div class="centered">
+            <h1>calcola il prezzo del tuo biglietto</h1>
+            <div class="input">
+                <div class="input-row">
+                    <div class="form-item">
+                        <label for="passenger-name">Nome e Cognome</label>
+                        <input type="text" name="passenger-name" id="passenger-name" placeholder="Inserisci il tuo nome">
+                    </div>
+                    <div class="form-item">
+                        <label for="passenger-km">Km da percorrere</label>
+                        <input type="number" name="passenger-km" id="passenger-km" placeholder="Inserisci i Km">
+                    </div>
+                    <div class="form-item">
+                        <label for="passenger-age-range">Fascia d'età</label>
+                        <select name="passenger-age-range" id="passenger-age-range">
+                            <option value=""></option>
+                            <option value="minor">0-17</option>
+                            <option value="adult">18-64</option>
+                            <option value="senior">65+</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-btns">
+                    <div class="btn">Genera</div>
+                    <div class="btn">Annulla</div>
+                </div>
+            </div>
+            <h2>il tuo biglietto</h2>
+            <div class="ticket-list">
+                <h3>dettaglio passeggeri</h3>
+                <div class="ticket">
+                    <div class="ticket-passenger">
+                        <h3>nome passeggero</h3>
+                        <p></p>
+                    </div>
+                    <div class="ticket-rate">
+                        <h4>Offerta</h4>
+                        <p></p>
+                    </div>
+                    <div class="ticket-carriage">
+                        <h4>Carrozza</h4>
+                        <p></p>
+                    </div>
+                    <div class="ticket-code">
+                        <h4>Codice CP</h4>
+                        <p></p>
+                    </div>
+                    <div class="ticket-price">
+                        <h4>Costo biglietto</h4>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- <script src="js/script.js"></script> -->
 </body>
 </html>

@@ -51,5 +51,3 @@ Ticket price: <strong>€${grossTicketPrice.toFixed(2)}</strong>
 ${breakdownExtra}`;
 
 // piazziamo le nostre variabili nella pagina
-document.getElementById('message').innerHTML = message;
-document.getElementById('breakdown').innerHTML = breakdown;
